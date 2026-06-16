@@ -20,7 +20,7 @@
 ```
 carlos zamboni
 fullstack dev transitioning to devops/cloud engineering
-based in indaiatuba, sp — open to remote roles
+based in sorocaba, sp — open to remote roles
 contributor @ ntari (us non-profit)
 ```
 
