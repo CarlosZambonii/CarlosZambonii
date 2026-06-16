@@ -1,19 +1,39 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e1e2e,50:6c63ff,100=0d1117&height=200&section=header&text=Carlos%20Zamboni&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=DevOps%20%7C%20Cloud%20%7C%20Fullstack&descAlignY=58&descSize=18&descColor=a0a0c0" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,30:1a1a2e,60:16213e,100:6c63ff&height=220&section=header&text=Carlos%20Zamboni&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=DevOps%20Engineer%20%7C%20Cloud%20Infrastructure%20%7C%20Fullstack&descAlignY=58&descSize=17&descColor=a78bfa&animation=fadeIn" />
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-CarlosZamboni-6c63ff?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carloszambonii/)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=14&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&multiline=false&width=600&lines=if+it%27s+not+in+Terraform%2C+it+doesn%27t+exist.;provisioning+infra+since+2023.;ship+fast%2C+monitor+everything%2C+break+nothing.;go+build+.)](https://git.io/typing-svg)
+
+<br/>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-CarlosZamboni-6c63ff?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/SEU_LINKEDIN)
+[![Email](https://img.shields.io/badge/email-6c63ff?style=flat-square&logo=gmail&logoColor=white)](mailto:SEU_EMAIL)
+[![GitHub](https://img.shields.io/badge/GitHub-CarlosZambonii-6c63ff?style=flat-square&logo=github&logoColor=white)](https://github.com/CarlosZambonii)
+
 </div>
 
 ---
 
-```bash
-$ cat about.txt
+<img align="right" width="380" src="https://github-readme-activity-graph.vercel.app/graph?username=CarlosZambonii&bg_color=0d1117&color=6c63ff&line=a78bfa&point=ffffff&area=true&hide_border=true" />
 
-  building infra pipelines, cloud architecture & products that ship
-  based in Indaiatuba, SP — open to remote DevOps/Cloud roles
-  contributor @ NTARI (US non-profit)
+**`$ whoami`**
+
 ```
+carlos zamboni
+fullstack dev transitioning to devops/cloud engineering
+based in indaiatuba, sp — open to remote roles
+contributor @ ntari (us non-profit)
+```
+
+**`$ cat current.txt`**
+
+```
+[*] building  → DevForge (devsecops pipeline on GCP)
+[*] studying  → LFCS + Azure fundamentals
+[*] target    → DevOps/Cloud Engineer @ remote
+```
+
+<br clear="right"/>
 
 ---
 
@@ -21,9 +41,9 @@ $ cat about.txt
 
 | | project | stack | status |
 |-|---------|-------|--------|
-| ◆ | **[DevForge](https://github.com/CarlosZambonii/devforge)** | Go · Docker · Terraform · Ansible · Vault · Kind · Azure · New Relic | active |
-| ◆ | **[Printly](https://github.com/CarlosZambonii/printly)** | Go · React · monorepo | active |
-| ◆ | **[Agrinet](https://github.com/CarlosZambonii/agrinet)** | Node.js · Docker · Grafana · Prometheus · Cloudflare R2 | deployed |
+| ◆ | **[DevForge](https://github.com/CarlosZambonii/devforge)** | Go · Docker · Terraform · Ansible · Vault · Kind · GCP · New Relic | `active` |
+| ◆ | **[Printly](https://github.com/CarlosZambonii/printly)** | Go · React · monorepo | `active` |
+| ◆ | **[Agrinet](https://github.com/CarlosZambonii/agrinet)** | Node.js · Docker · Grafana · Prometheus · Cloudflare R2 | `deployed` |
 
 ---
 
@@ -52,6 +72,7 @@ $ cat about.txt
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![Trivy](https://img.shields.io/badge/Trivy-1904DA?style=flat-square&logo=aquasecurity&logoColor=white)
 ![OWASP ZAP](https://img.shields.io/badge/OWASP%20ZAP-000000?style=flat-square&logo=owasp&logoColor=white)
+![gosec](https://img.shields.io/badge/gosec-00ADD8?style=flat-square&logo=go&logoColor=white)
 
 **app layer**
 
@@ -68,15 +89,21 @@ $ cat about.txt
 
 <div align="center">
 
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=CarlosZambonii&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=6c63ff&icon_color=6c63ff&text_color=c9d1d9&rank_icon=github" />
+<img height="160" src="https://github-readme-stats.vercel.app/api?username=CarlosZambonii&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=6c63ff&icon_color=a78bfa&text_color=c9d1d9&rank_icon=github" />
 <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CarlosZambonii&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=6c63ff&text_color=c9d1d9&langs_count=8" />
 
 <img src="https://streak-stats.demolab.com?user=CarlosZambonii&theme=tokyonight&hide_border=true&background=0d1117&ring=6c63ff&fire=a78bfa&currStreakLabel=6c63ff" />
+
+<br/>
+
+<img src="https://github-profile-trophy.vercel.app/?username=CarlosZambonii&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&column=7" />
 
 </div>
 
 ---
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:6c63ff,100:1e1e2e&height=100&section=footer" />
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6c63ff,50:1a1a2e,100:0d1117&height=100&section=footer" />
+
 </div>
