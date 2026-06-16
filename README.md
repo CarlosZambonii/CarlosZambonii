@@ -21,7 +21,7 @@ $ cat about.txt
 
 | | project | stack | status |
 |-|---------|-------|--------|
-| ◆ | **[DevForge](https://github.com/CarlosZambonii/devforge)** | Go · Docker · Terraform · Ansible · Vault · Kind · GCP · New Relic | active |
+| ◆ | **[DevForge](https://github.com/CarlosZambonii/devforge)** | Go · Docker · Terraform · Ansible · Vault · Kind · Azure · New Relic | active |
 | ◆ | **[Printly](https://github.com/CarlosZambonii/printly)** | Go · React · monorepo | active |
 | ◆ | **[Agrinet](https://github.com/CarlosZambonii/agrinet)** | Node.js · Docker · Grafana · Prometheus · Cloudflare R2 | deployed |
 
