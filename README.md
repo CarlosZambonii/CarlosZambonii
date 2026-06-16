@@ -6,7 +6,7 @@
 
 <br/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-CarlosZamboni-6c63ff?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/SEU_LINKEDIN)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-CarlosZamboni-6c63ff?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carloszambonii/?locale=pt)
 [![GitHub](https://img.shields.io/badge/GitHub-CarlosZambonii-6c63ff?style=flat-square&logo=github&logoColor=white)](https://github.com/CarlosZambonii)
 
 </div>
