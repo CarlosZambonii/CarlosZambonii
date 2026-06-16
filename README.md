@@ -7,7 +7,6 @@
 <br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-CarlosZamboni-6c63ff?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/SEU_LINKEDIN)
-[![Email](https://img.shields.io/badge/email-6c63ff?style=flat-square&logo=gmail&logoColor=white)](mailto:SEU_EMAIL)
 [![GitHub](https://img.shields.io/badge/GitHub-CarlosZambonii-6c63ff?style=flat-square&logo=github&logoColor=white)](https://github.com/CarlosZambonii)
 
 </div>
@@ -41,7 +40,7 @@ contributor @ ntari (us non-profit)
 
 | | project | stack | status |
 |-|---------|-------|--------|
-| ◆ | **[DevForge](https://github.com/CarlosZambonii/devforge)** | Go · Docker · Terraform · Ansible · Vault · Kind · GCP · New Relic | `active` |
+| ◆ | **[DevForge](https://github.com/CarlosZambonii/devforge)** | Go · Docker · Terraform · Ansible · Vault · Kind · Azure · New Relic | `active` |
 | ◆ | **[Printly](https://github.com/CarlosZambonii/printly)** | Go · React · monorepo | `active` |
 | ◆ | **[Agrinet](https://github.com/CarlosZambonii/agrinet)** | Node.js · Docker · Grafana · Prometheus · Cloudflare R2 | `deployed` |
 
