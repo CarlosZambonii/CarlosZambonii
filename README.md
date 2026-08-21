@@ -6,7 +6,6 @@
 
 <br/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-CarlosZamboni-6c63ff?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carloszambonii/?locale=pt)
 [![GitHub](https://img.shields.io/badge/GitHub-CarlosZambonii-6c63ff?style=flat-square&logo=github&logoColor=white)](https://github.com/CarlosZambonii)
 
 </div>
@@ -41,7 +40,17 @@ contributor @ ntari (us non-profit)
 | | project | stack | status |
 |-|---------|-------|--------|
 | ◆ | **[DevForge](https://github.com/CarlosZambonii/devforge)** | Go · Docker · Terraform · Ansible · Vault · Kind · Azure · New Relic | `active` |
-| ◆ | **[Agrinet](https://github.com/CarlosZambonii/agrinet)** | Node.js · Docker · Grafana · Prometheus · Cloudflare R2 | `deployed` |
+| ◆ | **[Agrinet](https://github.com/CarlosZambonii/agrinet)** | Node.js · Docker · Grafana · Prometheus · Cloudflare R2 | `pre-launch` |
+
+---
+
+## open source contributions
+
+| | company | contribution | status |
+|-|---------|--------------|--------|
+| ◆ | **[Buildkite](https://github.com/buildkite/buildkite-agent-scaler)** (Melbourne, AU) | [PR #337](https://github.com/buildkite/buildkite-agent-scaler/pull/337) — better error messages for rejected agent tokens | `in review` |
+| ◆ | **[base2Services](https://github.com/base2Services/cfn-guardian)** (Melbourne, AU) | [PR #148](https://github.com/base2Services/cfn-guardian/pull/148) — fixed a crash when no AWS region is configured | `in review` |
+| ◆ | **[Octopus Deploy](https://github.com/OctopusDeploy/helm-charts)** (Brisbane, AU) | answered a maintainer's open question on the Kubernetes Agent chart | `answered` |
 
 ---
 
