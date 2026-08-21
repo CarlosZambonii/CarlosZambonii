@@ -19,14 +19,14 @@
 ```
 carlos zamboni
 fullstack dev transitioning to devops/cloud engineering
-based in sorocaba, sp — open to remote roles
+based in sorocaba, sp, open to remote roles
 contributor @ ntari (us non-profit)
 ```
 
 **`$ cat current.txt`**
 
 ```
-[*] building  → DevForge (devsecops pipeline on GCP)
+[*] building  → DevForge (devsecops pipeline on Azure)
 [*] studying  → LFCS + Azure fundamentals
 [*] target    → DevOps/Cloud Engineer @ remote
 ```
@@ -48,7 +48,7 @@ contributor @ ntari (us non-profit)
 
 | | company | contribution | status |
 |-|---------|--------------|--------|
-| ◆ | **[Buildkite](https://github.com/buildkite/buildkite-agent-scaler)** (Melbourne, AU) | [PR #337](https://github.com/buildkite/buildkite-agent-scaler/pull/337) — better error messages for rejected agent tokens | `in review` |
+| ◆ | **[Buildkite](https://github.com/buildkite/buildkite-agent-scaler)** (Melbourne, AU) | [PR #337](https://github.com/buildkite/buildkite-agent-scaler/pull/337): better error messages for rejected agent tokens | `in review` |
 | ◆ | **[base2Services](https://github.com/base2Services/cfn-guardian)** (Melbourne, AU) | [PR #148](https://github.com/base2Services/cfn-guardian/pull/148) — fixed a crash when no AWS region is configured | `in review` |
 | ◆ | **[Octopus Deploy](https://github.com/OctopusDeploy/helm-charts)** (Brisbane, AU) | answered a maintainer's open question on the Kubernetes Agent chart | `answered` |
 
