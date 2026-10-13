@@ -13,26 +13,7 @@
 
 ---
 
-<img align="right" width="380" src="assets/matrix.svg" alt="" />
-
-**`$ whoami`**
-
-```
-carlos zamboni
-ex-devops/fullstack, now moving into offensive security / red team
-based in sorocaba, sp, open to remote roles
-contributor @ ntari (us non-profit)
-```
-
-**`$ cat current.txt`**
-
-```
-[+] certified → TryHackMe Pre Security (SEC0)
-[*] studying  → red team path @ TryHackMe
-[*] target    → Red Team / Pentest @ remote
-```
-
-<br clear="right"/>
+<img src="assets/whoami.svg" width="100%" alt="carlos zamboni: ex-devops/fullstack moving into offensive security / red team. sorocaba, sp, open to remote. TryHackMe Pre Security (SEC0)." />
 
 
 ---
@@ -52,8 +33,6 @@ contributor @ ntari (us non-profit)
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2500&pause=2500&color=FF0033&vCenter=true&width=500&height=34&lines=%24+git+log+--merged" alt="$ git log --merged" />
 
 <img src="assets/contributions.svg" width="100%" alt="open source: Buildkite PR #337, merged" />
-
-<sub>→ <a href="https://github.com/buildkite/buildkite-agent-scaler/pull/337">Buildkite PR #337</a></sub>
 
 ---
 
