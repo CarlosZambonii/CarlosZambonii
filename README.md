@@ -2,6 +2,8 @@
 
 <img src="assets/header.svg" width="100%" alt="Carlos Zamboni" />
 
+<img src="assets/avatar.png" width="180" alt="Carlos Zamboni" />
+
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=14&duration=3000&pause=1000&color=FF0033&center=true&vCenter=true&multiline=false&width=600&lines=whoami+%26%26+id;think+like+an+attacker%2C+defend+like+an+engineer.;from+building+infra+to+breaking+it.;nmap+-sC+-sV+target)](https://git.io/typing-svg)
 
 <br/>
