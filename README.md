@@ -44,14 +44,7 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2500&pause=2500&color=FF0033&vCenter=true&width=500&height=34&lines=%24+.%2Fstats.sh" alt="$ ./stats.sh" />
 
-<div align="center">
-
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=CarlosZambonii&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=ff0033&icon_color=ff4d4d&text_color=e6e6e6&rank_icon=github" />
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CarlosZambonii&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=ff0033&text_color=e6e6e6&langs_count=8" />
-
-<img src="https://streak-stats.demolab.com?user=CarlosZambonii&theme=dark&hide_border=true&background=0d1117&ring=ff0033&fire=ff4d4d&currStreakLabel=ff0033&sideLabels=ff4d4d&stroke=330000" />
-
-</div>
+<img src="https://raw.githubusercontent.com/CarlosZambonii/CarlosZambonii/output/stats.svg" width="100%" alt="github stats" />
 
 ---
 
