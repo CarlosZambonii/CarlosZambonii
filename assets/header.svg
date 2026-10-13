@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220">
+  <style>
+    .bg { fill: #0d1117; }
+    .grid { stroke: #ff0033; stroke-opacity: .07; }
+    .name { font: 700 64px 'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace; fill: #ff0033; letter-spacing: 2px; }
+    .g1 { fill: #00e5ff; opacity: .7; animation: g1 3s infinite steps(1); }
+    .g2 { fill: #ff4d4d; opacity: .7; animation: g2 3s infinite steps(1); }
+    .main { animation: flick 4s infinite; }
+    .sub { font: 400 18px 'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace; fill: #e6e6e6; }
+    .sub tspan.r { fill: #ff4d4d; }
+    .cur { fill: #ff0033; animation: blink 1s infinite steps(1); }
+    .scan { fill: url(#scan); animation: scan 4s linear infinite; }
+    @keyframes g1 { 0%,100% { transform: translate(0,0); clip-path: inset(0 0 0 0); } 92% { transform: translate(-4px,2px); clip-path: inset(10% 0 55% 0); } 95% { transform: translate(4px,-2px); clip-path: inset(60% 0 10% 0); } 97% { transform: translate(0,0); clip-path: inset(0 0 100% 0); } }
+    @keyframes g2 { 0%,100% { transform: translate(0,0); clip-path: inset(0 0 100% 0); } 93% { transform: translate(5px,0); clip-path: inset(40% 0 30% 0); } 96% { transform: translate(-5px,1px); clip-path: inset(5% 0 70% 0); } 98% { clip-path: inset(0 0 100% 0); } }
+    @keyframes flick { 0%,100% { opacity: 1; } 91% { opacity: 1; } 92% { opacity: .6; } 93% { opacity: 1; } 96% { opacity: .8; } }
+    @keyframes blink { 0%,50% { opacity: 1; } 51%,100% { opacity: 0; } }
+    @keyframes scan { from { transform: translateY(-60px); } to { transform: translateY(240px); } }
+  </style>
+  <defs>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff0033" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#ff0033" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#ff0033" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path class="grid" d="M30 0H0V30" fill="none"/>
+    </pattern>
+  </defs>
+  <rect class="bg" width="900" height="220" rx="10"/>
+  <rect width="900" height="220" fill="url(#grid)"/>
+  <g text-anchor="middle">
+    <text class="name g1" x="450" y="110">CARLOS ZAMBONI</text>
+    <text class="name g2" x="450" y="110">CARLOS ZAMBONI</text>
+    <text class="name main" x="450" y="110">CARLOS ZAMBONI</text>
+    <text class="sub" x="450" y="160"><tspan class="r">[</tspan> offensive security <tspan class="r">|</tspan> red team <tspan class="r">|</tspan> cloud <tspan class="r">]</tspan></text>
+  </g>
+  <rect class="cur" x="742" y="64" width="22" height="52"/>
+  <rect class="scan" width="900" height="60"/>
+</svg>

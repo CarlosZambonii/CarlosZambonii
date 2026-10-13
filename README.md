@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,30:1a0000,60:330000,100:ff0033&height=220&section=header&text=Carlos%20Zamboni&fontSize=52&fontColor=ff0033&fontAlignY=38&desc=Offensive%20Security%20%7C%20Red%20Team%20%7C%20Cloud&descAlignY=58&descSize=17&descColor=ff4d4d&animation=fadeIn" />
+<img src="assets/header.svg" width="100%" alt="Carlos Zamboni" />
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=14&duration=3000&pause=1000&color=FF0033&center=true&vCenter=true&multiline=false&width=600&lines=whoami+%26%26+id;think+like+an+attacker%2C+defend+like+an+engineer.;from+building+infra+to+breaking+it.;nmap+-sC+-sV+target)](https://git.io/typing-svg)
 
@@ -12,6 +12,8 @@
 </div>
 
 ---
+
+<img align="right" width="380" src="assets/matrix.svg" alt="" />
 
 **`$ whoami`**
 
@@ -30,10 +32,12 @@ contributor @ ntari (us non-profit)
 [*] target    → Red Team / Pentest @ remote
 ```
 
+<br clear="right"/>
+
 
 ---
 
-## certifications
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2500&pause=2500&color=FF0033&vCenter=true&width=500&height=34&lines=%24+cat+certifications.txt" alt="$ cat certifications.txt" />
 
 | | cert | issuer |
 |-|------|--------|
@@ -41,7 +45,7 @@ contributor @ ntari (us non-profit)
 
 ---
 
-## projects
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2500&pause=2500&color=FF0033&vCenter=true&width=500&height=34&lines=%24+ls+~%2Fprojects" alt="$ ls ~/projects" />
 
 | | project | stack | status |
 |-|---------|-------|--------|
@@ -50,7 +54,7 @@ contributor @ ntari (us non-profit)
 
 ---
 
-## open source contributions
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2500&pause=2500&color=FF0033&vCenter=true&width=500&height=34&lines=%24+git+log+--merged" alt="$ git log --merged" />
 
 | | company | contribution | status |
 |-|---------|--------------|--------|
@@ -58,7 +62,7 @@ contributor @ ntari (us non-profit)
 
 ---
 
-## stack
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2500&pause=2500&color=FF0033&vCenter=true&width=500&height=34&lines=%24+which+tools" alt="$ which tools" />
 
 **offensive security**
 
@@ -92,7 +96,7 @@ contributor @ ntari (us non-profit)
 
 ---
 
-## stats
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2500&pause=2500&color=FF0033&vCenter=true&width=500&height=34&lines=%24+.%2Fstats.sh" alt="$ ./stats.sh" />
 
 <div align="center">
 
@@ -100,6 +104,14 @@ contributor @ ntari (us non-profit)
 <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CarlosZambonii&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=ff0033&text_color=e6e6e6&langs_count=8" />
 
 <img src="https://streak-stats.demolab.com?user=CarlosZambonii&theme=dark&hide_border=true&background=0d1117&ring=ff0033&fire=ff4d4d&currStreakLabel=ff0033&sideLabels=ff4d4d&stroke=330000" />
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/CarlosZambonii/CarlosZambonii/output/snake.svg" alt="snake eating contributions" />
 
 </div>
 
