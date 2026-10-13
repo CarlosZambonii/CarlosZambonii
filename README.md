@@ -41,8 +41,6 @@ contributor @ ntari (us non-profit)
 
 <img src="assets/certifications.svg" width="100%" alt="certifications: Pre Security (SEC0), TryHackMe" />
 
-<sub>→ <a href="https://tryhackme.com/p/naza1mm">TryHackMe profile</a></sub>
-
 ---
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2500&pause=2500&color=FF0033&vCenter=true&width=500&height=34&lines=%24+ls+~%2Fprojects" alt="$ ls ~/projects" />
