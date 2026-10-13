@@ -1,39 +1,354 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220">
-  <style>
-    .bg { fill: #0d1117; }
-    .grid { stroke: #ff0033; stroke-opacity: .07; }
-    .name { font: 700 64px 'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace; fill: #ff0033; letter-spacing: 2px; }
-    .g1 { fill: #00e5ff; opacity: .7; animation: g1 3s infinite steps(1); }
-    .g2 { fill: #ff4d4d; opacity: .7; animation: g2 3s infinite steps(1); }
-    .main { animation: flick 4s infinite; }
-    .sub { font: 400 18px 'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace; fill: #e6e6e6; }
-    .sub tspan.r { fill: #ff4d4d; }
-    .cur { fill: #ff0033; animation: blink 1s infinite steps(1); }
-    .scan { fill: url(#scan); animation: scan 4s linear infinite; }
-    @keyframes g1 { 0%,100% { transform: translate(0,0); clip-path: inset(0 0 0 0); } 92% { transform: translate(-4px,2px); clip-path: inset(10% 0 55% 0); } 95% { transform: translate(4px,-2px); clip-path: inset(60% 0 10% 0); } 97% { transform: translate(0,0); clip-path: inset(0 0 100% 0); } }
-    @keyframes g2 { 0%,100% { transform: translate(0,0); clip-path: inset(0 0 100% 0); } 93% { transform: translate(5px,0); clip-path: inset(40% 0 30% 0); } 96% { transform: translate(-5px,1px); clip-path: inset(5% 0 70% 0); } 98% { clip-path: inset(0 0 100% 0); } }
-    @keyframes flick { 0%,100% { opacity: 1; } 91% { opacity: 1; } 92% { opacity: .6; } 93% { opacity: 1; } 96% { opacity: .8; } }
-    @keyframes blink { 0%,50% { opacity: 1; } 51%,100% { opacity: 0; } }
-    @keyframes scan { from { transform: translateY(-60px); } to { transform: translateY(240px); } }
-  </style>
-  <defs>
-    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ff0033" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#ff0033" stop-opacity=".12"/>
-      <stop offset="1" stop-color="#ff0033" stop-opacity="0"/>
-    </linearGradient>
-    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path class="grid" d="M30 0H0V30" fill="none"/>
-    </pattern>
-  </defs>
-  <rect class="bg" width="900" height="220" rx="10"/>
-  <rect width="900" height="220" fill="url(#grid)"/>
-  <g text-anchor="middle">
-    <text class="name g1" x="450" y="110">CARLOS ZAMBONI</text>
-    <text class="name g2" x="450" y="110">CARLOS ZAMBONI</text>
-    <text class="name main" x="450" y="110">CARLOS ZAMBONI</text>
-    <text class="sub" x="450" y="160"><tspan class="r">[</tspan> offensive security <tspan class="r">|</tspan> red team <tspan class="r">|</tspan> cloud <tspan class="r">]</tspan></text>
+<style>
+  .n { font: 700 60px 'JetBrains Mono','Fira Code',Consolas,'DejaVu Sans Mono','Courier New',monospace; fill: #ff0033; text-anchor: middle; }
+  .s { fill: #ff4d4d; opacity: 0; }
+  .hx { font: 12px 'JetBrains Mono',Consolas,'DejaVu Sans Mono','Courier New',monospace; fill: #ff0033; fill-opacity: .13; white-space: pre; }
+  .scroll { animation: up 12s linear infinite; }
+  @keyframes up { from { transform: translateY(0); } to { transform: translateY(-252px); } }
+  .sub { font: 18px 'JetBrains Mono','Fira Code',Consolas,'DejaVu Sans Mono','Courier New',monospace; fill: #e6e6e6; text-anchor: middle; }
+  .after { opacity: 0; animation: after 10.0s infinite; }
+  .g1 { fill: #00e5ff; fill-opacity: .7; animation: g1 3s infinite steps(1); }
+  .g2 { fill: #ff4d4d; fill-opacity: .7; animation: g2 3s infinite steps(1); }
+  @keyframes g1 { 0%,100% { transform: translate(0,0); clip-path: inset(0 0 100% 0); } 88% { transform: translate(-4px,2px); clip-path: inset(10% 0 55% 0); } 91% { transform: translate(4px,-2px); clip-path: inset(60% 0 10% 0); } 94% { clip-path: inset(0 0 100% 0); } }
+  @keyframes g2 { 0%,100% { transform: translate(0,0); clip-path: inset(0 0 100% 0); } 89% { transform: translate(5px,0); clip-path: inset(40% 0 30% 0); } 92% { transform: translate(-5px,1px); clip-path: inset(5% 0 70% 0); } 95% { clip-path: inset(0 0 100% 0); } }
+  .cur { fill: #ff0033; animation: bl 1s infinite steps(1); }
+  @keyframes bl { 50% { opacity: 0; } }
+  .scan { fill: url(#scan); animation: scan 5s linear infinite; }
+  @keyframes scan { from { transform: translateY(-60px); } to { transform: translateY(240px); } }
+  @keyframes f{0%,0.600%{opacity:1}0.610%,100%{opacity:0}}
+@keyframes L0{0%,4.000%{opacity:0}4.100%{opacity:1;fill:#ffffff}6.500%,97.000%{opacity:1;fill:#ff0033}100%{opacity:0}}
+@keyframes L1{0%,5.400%{opacity:0}5.500%{opacity:1;fill:#ffffff}7.900%,97.000%{opacity:1;fill:#ff0033}100%{opacity:0}}
+@keyframes L2{0%,6.800%{opacity:0}6.900%{opacity:1;fill:#ffffff}9.300%,97.000%{opacity:1;fill:#ff0033}100%{opacity:0}}
+@keyframes L3{0%,8.200%{opacity:0}8.300%{opacity:1;fill:#ffffff}10.700%,97.000%{opacity:1;fill:#ff0033}100%{opacity:0}}
+@keyframes L4{0%,9.600%{opacity:0}9.700%{opacity:1;fill:#ffffff}12.100%,97.000%{opacity:1;fill:#ff0033}100%{opacity:0}}
+@keyframes L5{0%,11.000%{opacity:0}11.100%{opacity:1;fill:#ffffff}13.500%,97.000%{opacity:1;fill:#ff0033}100%{opacity:0}}
+@keyframes L7{0%,13.800%{opacity:0}13.900%{opacity:1;fill:#ffffff}16.300%,97.000%{opacity:1;fill:#ff0033}100%{opacity:0}}
+@keyframes L8{0%,15.200%{opacity:0}15.300%{opacity:1;fill:#ffffff}17.700%,97.000%{opacity:1;fill:#ff0033}100%{opacity:0}}
+@keyframes L9{0%,16.600%{opacity:0}16.700%{opacity:1;fill:#ffffff}19.100%,97.000%{opacity:1;fill:#ff0033}100%{opacity:0}}
+@keyframes L10{0%,18.000%{opacity:0}18.100%{opacity:1;fill:#ffffff}20.500%,97.000%{opacity:1;fill:#ff0033}100%{opacity:0}}
+@keyframes L11{0%,19.400%{opacity:0}19.500%{opacity:1;fill:#ffffff}21.900%,97.000%{opacity:1;fill:#ff0033}100%{opacity:0}}
+@keyframes L12{0%,20.800%{opacity:0}20.900%{opacity:1;fill:#ffffff}23.300%,97.000%{opacity:1;fill:#ff0033}100%{opacity:0}}
+@keyframes L13{0%,22.200%{opacity:0}22.300%{opacity:1;fill:#ffffff}24.700%,97.000%{opacity:1;fill:#ff0033}100%{opacity:0}}
+@keyframes after{0%,25.200%{opacity:0}27.200%,97.000%{opacity:1}100%{opacity:0}}
+</style>
+<defs>
+  <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff0033" stop-opacity="0"/><stop offset=".5" stop-color="#ff0033" stop-opacity=".12"/><stop offset="1" stop-color="#ff0033" stop-opacity="0"/></linearGradient>
+  <radialGradient id="vig" cx=".5" cy=".5" r=".6"><stop offset=".35" stop-color="#0d1117" stop-opacity=".9"/><stop offset="1" stop-color="#0d1117" stop-opacity="0"/></radialGradient>
+  <clipPath id="box"><rect width="900" height="220" rx="10"/></clipPath>
+</defs>
+<g clip-path="url(#box)">
+  <rect width="900" height="220" fill="#0d1117"/>
+  <g class="scroll"><text class="hx" x="24" y="0">0x7ffd3a10  ed bf 88 46 5f 03 ad ed  29 ab 14 c2 56 e7 d8 50  |...F_...)...V..P|</text><text class="hx" x="24" y="14">0x7ffd3a20  56 79 1a 38 43 20 c4 34  95 68 72 d7 2c 88 6b cb  |Vy.8C..4.hr.,.k.|</text><text class="hx" x="24" y="28">0x7ffd3a30  8f ae 16 66 02 d2 1c c1  fb 47 0c 79 d9 39 01 3e  |...f.....G.y.9..|</text><text class="hx" x="24" y="42">0x7ffd3a40  65 67 a9 04 2a 44 08 2b  fe 65 d7 23 cb 62 2f 4a  |eg..*D.+.e.#.b/J|</text><text class="hx" x="24" y="56">0x7ffd3a50  58 15 1b 8a 4c 89 11 3e  ce 79 52 16 bb 2c b1 38  |X...L....yR..,.8|</text><text class="hx" x="24" y="70">0x7ffd3a60  bb e7 6b cd 65 09 c2 a8  00 dd 39 6d 71 e3 8a a6  |..k.e.....9mq...|</text><text class="hx" x="24" y="84">0x7ffd3a70  2d 9d 91 34 1c 0d c3 db  fe b1 7f 21 d9 76 31 cd  |-..4.......!.v1.|</text><text class="hx" x="24" y="98">0x7ffd3a80  be bd 47 94 57 84 0f 19  58 86 54 3d 4b 06 18 1f  |..G.W...X.T=K...|</text><text class="hx" x="24" y="112">0x7ffd3a90  e6 6a c7 96 07 b5 91 48  f6 8e 46 2c 97 3c 21 d7  |.j.....H..F,..!.|</text><text class="hx" x="24" y="126">0x7ffd3aa0  e7 48 c4 56 8c fd b2 32  18 8d 41 58 2b 53 71 06  |.H.V...2..AX+Sq.|</text><text class="hx" x="24" y="140">0x7ffd3ab0  67 5a f2 e9 c6 2a 58 f6  86 22 0e df 9e 21 99 20  |gZ...*X..&quot;...!..|</text><text class="hx" x="24" y="154">0x7ffd3ac0  72 46 34 33 fb e8 1e fa  1b 0e bf 7c ea 76 be fd  |rF43.......|.v..|</text><text class="hx" x="24" y="168">0x7ffd3ad0  7c 12 2b 18 d1 d0 23 29  60 11 5c 2b 21 0f b5 f0  ||.+...#)`.\+!...|</text><text class="hx" x="24" y="182">0x7ffd3ae0  f3 0d 26 aa 2b a4 04 ed  e5 4c c5 f4 46 36 b2 76  |....+....L..F6.v|</text><text class="hx" x="24" y="196">0x7ffd3af0  e7 42 62 71 37 38 1a 3d  26 2a be 35 0c ef 66 bd  |.Bbq78.=.*.5..f.|</text><text class="hx" x="24" y="210">0x7ffd3b00  29 78 02 83 65 07 e0 81  0b 34 d5 1d 80 f3 a1 70  |)x..e....4.....p|</text><text class="hx" x="24" y="224">0x7ffd3b10  1e 8c 43 99 13 5f b4 ce  03 9a 30 0f a2 e0 7e d5  |..C.._....0...~.|</text><text class="hx" x="24" y="238">0x7ffd3b20  a4 fb b1 cc dc 6a 28 8d  9a ec ee e9 e1 c5 5f a8  |.....j(......._.|</text><text class="hx" x="24" y="252">0x7ffd3a10  ed bf 88 46 5f 03 ad ed  29 ab 14 c2 56 e7 d8 50  |...F_...)...V..P|</text><text class="hx" x="24" y="266">0x7ffd3a20  56 79 1a 38 43 20 c4 34  95 68 72 d7 2c 88 6b cb  |Vy.8C..4.hr.,.k.|</text><text class="hx" x="24" y="280">0x7ffd3a30  8f ae 16 66 02 d2 1c c1  fb 47 0c 79 d9 39 01 3e  |...f.....G.y.9..|</text><text class="hx" x="24" y="294">0x7ffd3a40  65 67 a9 04 2a 44 08 2b  fe 65 d7 23 cb 62 2f 4a  |eg..*D.+.e.#.b/J|</text><text class="hx" x="24" y="308">0x7ffd3a50  58 15 1b 8a 4c 89 11 3e  ce 79 52 16 bb 2c b1 38  |X...L....yR..,.8|</text><text class="hx" x="24" y="322">0x7ffd3a60  bb e7 6b cd 65 09 c2 a8  00 dd 39 6d 71 e3 8a a6  |..k.e.....9mq...|</text><text class="hx" x="24" y="336">0x7ffd3a70  2d 9d 91 34 1c 0d c3 db  fe b1 7f 21 d9 76 31 cd  |-..4.......!.v1.|</text><text class="hx" x="24" y="350">0x7ffd3a80  be bd 47 94 57 84 0f 19  58 86 54 3d 4b 06 18 1f  |..G.W...X.T=K...|</text><text class="hx" x="24" y="364">0x7ffd3a90  e6 6a c7 96 07 b5 91 48  f6 8e 46 2c 97 3c 21 d7  |.j.....H..F,..!.|</text><text class="hx" x="24" y="378">0x7ffd3aa0  e7 48 c4 56 8c fd b2 32  18 8d 41 58 2b 53 71 06  |.H.V...2..AX+Sq.|</text><text class="hx" x="24" y="392">0x7ffd3ab0  67 5a f2 e9 c6 2a 58 f6  86 22 0e df 9e 21 99 20  |gZ...*X..&quot;...!..|</text><text class="hx" x="24" y="406">0x7ffd3ac0  72 46 34 33 fb e8 1e fa  1b 0e bf 7c ea 76 be fd  |rF43.......|.v..|</text><text class="hx" x="24" y="420">0x7ffd3ad0  7c 12 2b 18 d1 d0 23 29  60 11 5c 2b 21 0f b5 f0  ||.+...#)`.\+!...|</text><text class="hx" x="24" y="434">0x7ffd3ae0  f3 0d 26 aa 2b a4 04 ed  e5 4c c5 f4 46 36 b2 76  |....+....L..F6.v|</text><text class="hx" x="24" y="448">0x7ffd3af0  e7 42 62 71 37 38 1a 3d  26 2a be 35 0c ef 66 bd  |.Bbq78.=.*.5..f.|</text><text class="hx" x="24" y="462">0x7ffd3b00  29 78 02 83 65 07 e0 81  0b 34 d5 1d 80 f3 a1 70  |)x..e....4.....p|</text><text class="hx" x="24" y="476">0x7ffd3b10  1e 8c 43 99 13 5f b4 ce  03 9a 30 0f a2 e0 7e d5  |..C.._....0...~.|</text><text class="hx" x="24" y="490">0x7ffd3b20  a4 fb b1 cc dc 6a 28 8d  9a ec ee e9 e1 c5 5f a8  |.....j(......._.|</text></g>
+  <ellipse cx="450.0" cy="110.0" rx="378.0" ry="110.0" fill="url(#vig)"/>
+  <text class="n s" x="190.0" y="112" style="animation:f 10.0s 0.00s infinite">?</text>
+<text class="n s" x="190.0" y="112" style="animation:f 10.0s 0.06s infinite">H</text>
+<text class="n s" x="190.0" y="112" style="animation:f 10.0s 0.12s infinite">B</text>
+<text class="n s" x="190.0" y="112" style="animation:f 10.0s 0.18s infinite">[</text>
+<text class="n s" x="190.0" y="112" style="animation:f 10.0s 0.24s infinite">T</text>
+<text class="n s" x="190.0" y="112" style="animation:f 10.0s 0.30s infinite">R</text>
+<text class="n s" x="190.0" y="112" style="animation:f 10.0s 0.36s infinite">Q</text>
+<text class="n" x="190.0" y="112" style="opacity:0;animation:L0 10.0s infinite">C</text>
+<text class="n s" x="230.0" y="112" style="animation:f 10.0s 0.00s infinite">J</text>
+<text class="n s" x="230.0" y="112" style="animation:f 10.0s 0.06s infinite">[</text>
+<text class="n s" x="230.0" y="112" style="animation:f 10.0s 0.12s infinite">G</text>
+<text class="n s" x="230.0" y="112" style="animation:f 10.0s 0.18s infinite">&lt;</text>
+<text class="n s" x="230.0" y="112" style="animation:f 10.0s 0.24s infinite">[</text>
+<text class="n s" x="230.0" y="112" style="animation:f 10.0s 0.30s infinite">#</text>
+<text class="n s" x="230.0" y="112" style="animation:f 10.0s 0.36s infinite">F</text>
+<text class="n s" x="230.0" y="112" style="animation:f 10.0s 0.42s infinite">&amp;</text>
+<text class="n s" x="230.0" y="112" style="animation:f 10.0s 0.48s infinite">3</text>
+<text class="n" x="230.0" y="112" style="opacity:0;animation:L1 10.0s infinite">A</text>
+<text class="n s" x="270.0" y="112" style="animation:f 10.0s 0.00s infinite">C</text>
+<text class="n s" x="270.0" y="112" style="animation:f 10.0s 0.06s infinite">B</text>
+<text class="n s" x="270.0" y="112" style="animation:f 10.0s 0.12s infinite">F</text>
+<text class="n s" x="270.0" y="112" style="animation:f 10.0s 0.18s infinite">P</text>
+<text class="n s" x="270.0" y="112" style="animation:f 10.0s 0.24s infinite">Q</text>
+<text class="n s" x="270.0" y="112" style="animation:f 10.0s 0.30s infinite">8</text>
+<text class="n s" x="270.0" y="112" style="animation:f 10.0s 0.36s infinite">@</text>
+<text class="n s" x="270.0" y="112" style="animation:f 10.0s 0.42s infinite">B</text>
+<text class="n s" x="270.0" y="112" style="animation:f 10.0s 0.48s infinite">$</text>
+<text class="n s" x="270.0" y="112" style="animation:f 10.0s 0.54s infinite">N</text>
+<text class="n s" x="270.0" y="112" style="animation:f 10.0s 0.60s infinite">{</text>
+<text class="n s" x="270.0" y="112" style="animation:f 10.0s 0.66s infinite">*</text>
+<text class="n" x="270.0" y="112" style="opacity:0;animation:L2 10.0s infinite">R</text>
+<text class="n s" x="310.0" y="112" style="animation:f 10.0s 0.00s infinite">&gt;</text>
+<text class="n s" x="310.0" y="112" style="animation:f 10.0s 0.06s infinite">#</text>
+<text class="n s" x="310.0" y="112" style="animation:f 10.0s 0.12s infinite">2</text>
+<text class="n s" x="310.0" y="112" style="animation:f 10.0s 0.18s infinite">Q</text>
+<text class="n s" x="310.0" y="112" style="animation:f 10.0s 0.24s infinite">4</text>
+<text class="n s" x="310.0" y="112" style="animation:f 10.0s 0.30s infinite">&amp;</text>
+<text class="n s" x="310.0" y="112" style="animation:f 10.0s 0.36s infinite">T</text>
+<text class="n s" x="310.0" y="112" style="animation:f 10.0s 0.42s infinite">A</text>
+<text class="n s" x="310.0" y="112" style="animation:f 10.0s 0.48s infinite">]</text>
+<text class="n s" x="310.0" y="112" style="animation:f 10.0s 0.54s infinite">L</text>
+<text class="n s" x="310.0" y="112" style="animation:f 10.0s 0.60s infinite">&gt;</text>
+<text class="n s" x="310.0" y="112" style="animation:f 10.0s 0.66s infinite">3</text>
+<text class="n s" x="310.0" y="112" style="animation:f 10.0s 0.72s infinite">X</text>
+<text class="n s" x="310.0" y="112" style="animation:f 10.0s 0.78s infinite">T</text>
+<text class="n" x="310.0" y="112" style="opacity:0;animation:L3 10.0s infinite">L</text>
+<text class="n s" x="350.0" y="112" style="animation:f 10.0s 0.00s infinite">K</text>
+<text class="n s" x="350.0" y="112" style="animation:f 10.0s 0.06s infinite">P</text>
+<text class="n s" x="350.0" y="112" style="animation:f 10.0s 0.12s infinite">]</text>
+<text class="n s" x="350.0" y="112" style="animation:f 10.0s 0.18s infinite">X</text>
+<text class="n s" x="350.0" y="112" style="animation:f 10.0s 0.24s infinite">G</text>
+<text class="n s" x="350.0" y="112" style="animation:f 10.0s 0.30s infinite">F</text>
+<text class="n s" x="350.0" y="112" style="animation:f 10.0s 0.36s infinite">0</text>
+<text class="n s" x="350.0" y="112" style="animation:f 10.0s 0.42s infinite">G</text>
+<text class="n s" x="350.0" y="112" style="animation:f 10.0s 0.48s infinite">Y</text>
+<text class="n s" x="350.0" y="112" style="animation:f 10.0s 0.54s infinite">Y</text>
+<text class="n s" x="350.0" y="112" style="animation:f 10.0s 0.60s infinite">@</text>
+<text class="n s" x="350.0" y="112" style="animation:f 10.0s 0.66s infinite">S</text>
+<text class="n s" x="350.0" y="112" style="animation:f 10.0s 0.72s infinite">C</text>
+<text class="n s" x="350.0" y="112" style="animation:f 10.0s 0.78s infinite">}</text>
+<text class="n s" x="350.0" y="112" style="animation:f 10.0s 0.84s infinite">5</text>
+<text class="n s" x="350.0" y="112" style="animation:f 10.0s 0.90s infinite">#</text>
+<text class="n" x="350.0" y="112" style="opacity:0;animation:L4 10.0s infinite">O</text>
+<text class="n s" x="390.0" y="112" style="animation:f 10.0s 0.00s infinite">H</text>
+<text class="n s" x="390.0" y="112" style="animation:f 10.0s 0.06s infinite">0</text>
+<text class="n s" x="390.0" y="112" style="animation:f 10.0s 0.12s infinite">F</text>
+<text class="n s" x="390.0" y="112" style="animation:f 10.0s 0.18s infinite">$</text>
+<text class="n s" x="390.0" y="112" style="animation:f 10.0s 0.24s infinite">U</text>
+<text class="n s" x="390.0" y="112" style="animation:f 10.0s 0.30s infinite">?</text>
+<text class="n s" x="390.0" y="112" style="animation:f 10.0s 0.36s infinite">!</text>
+<text class="n s" x="390.0" y="112" style="animation:f 10.0s 0.42s infinite">Z</text>
+<text class="n s" x="390.0" y="112" style="animation:f 10.0s 0.48s infinite">%</text>
+<text class="n s" x="390.0" y="112" style="animation:f 10.0s 0.54s infinite">N</text>
+<text class="n s" x="390.0" y="112" style="animation:f 10.0s 0.60s infinite">{</text>
+<text class="n s" x="390.0" y="112" style="animation:f 10.0s 0.66s infinite">E</text>
+<text class="n s" x="390.0" y="112" style="animation:f 10.0s 0.72s infinite">C</text>
+<text class="n s" x="390.0" y="112" style="animation:f 10.0s 0.78s infinite">/</text>
+<text class="n s" x="390.0" y="112" style="animation:f 10.0s 0.84s infinite">Q</text>
+<text class="n s" x="390.0" y="112" style="animation:f 10.0s 0.90s infinite">=</text>
+<text class="n s" x="390.0" y="112" style="animation:f 10.0s 0.96s infinite">U</text>
+<text class="n s" x="390.0" y="112" style="animation:f 10.0s 1.02s infinite">F</text>
+<text class="n s" x="390.0" y="112" style="animation:f 10.0s 1.08s infinite">Q</text>
+<text class="n" x="390.0" y="112" style="opacity:0;animation:L5 10.0s infinite">S</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 0.00s infinite">G</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 0.06s infinite">0</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 0.12s infinite">T</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 0.18s infinite">5</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 0.24s infinite">?</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 0.30s infinite">Z</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 0.36s infinite">L</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 0.42s infinite">Z</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 0.48s infinite">Y</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 0.54s infinite">P</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 0.60s infinite">/</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 0.66s infinite">T</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 0.72s infinite">&gt;</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 0.78s infinite">&lt;</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 0.84s infinite">*</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 0.90s infinite">E</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 0.96s infinite">@</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 1.02s infinite">?</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 1.08s infinite">L</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 1.14s infinite">#</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 1.20s infinite">}</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 1.26s infinite">R</text>
+<text class="n s" x="470.0" y="112" style="animation:f 10.0s 1.32s infinite">L</text>
+<text class="n" x="470.0" y="112" style="opacity:0;animation:L7 10.0s infinite">Z</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 0.00s infinite">5</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 0.06s infinite">0</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 0.12s infinite">T</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 0.18s infinite">?</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 0.24s infinite">&gt;</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 0.30s infinite">$</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 0.36s infinite">Q</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 0.42s infinite">&lt;</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 0.48s infinite">W</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 0.54s infinite">=</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 0.60s infinite">=</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 0.66s infinite">D</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 0.72s infinite">Q</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 0.78s infinite">C</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 0.84s infinite">W</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 0.90s infinite">1</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 0.96s infinite">T</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 1.02s infinite">E</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 1.08s infinite">P</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 1.14s infinite">%</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 1.20s infinite">{</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 1.26s infinite">W</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 1.32s infinite">P</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 1.38s infinite">*</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 1.44s infinite">7</text>
+<text class="n s" x="510.0" y="112" style="animation:f 10.0s 1.50s infinite">1</text>
+<text class="n" x="510.0" y="112" style="opacity:0;animation:L8 10.0s infinite">A</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 0.00s infinite">*</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 0.06s infinite">5</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 0.12s infinite">K</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 0.18s infinite">S</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 0.24s infinite">J</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 0.30s infinite">R</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 0.36s infinite">[</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 0.42s infinite">$</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 0.48s infinite">#</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 0.54s infinite">S</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 0.60s infinite">[</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 0.66s infinite">&amp;</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 0.72s infinite">3</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 0.78s infinite">&amp;</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 0.84s infinite">1</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 0.90s infinite">Z</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 0.96s infinite">Q</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 1.02s infinite">J</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 1.08s infinite">8</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 1.14s infinite">7</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 1.20s infinite">F</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 1.26s infinite">]</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 1.32s infinite">D</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 1.38s infinite">H</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 1.44s infinite">K</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 1.50s infinite">?</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 1.56s infinite">L</text>
+<text class="n s" x="550.0" y="112" style="animation:f 10.0s 1.62s infinite">+</text>
+<text class="n" x="550.0" y="112" style="opacity:0;animation:L9 10.0s infinite">M</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 0.00s infinite">&lt;</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 0.06s infinite">3</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 0.12s infinite">@</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 0.18s infinite">E</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 0.24s infinite">0</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 0.30s infinite">0</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 0.36s infinite">@</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 0.42s infinite">5</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 0.48s infinite">9</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 0.54s infinite">S</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 0.60s infinite">$</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 0.66s infinite">A</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 0.72s infinite">&lt;</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 0.78s infinite">}</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 0.84s infinite">H</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 0.90s infinite">&lt;</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 0.96s infinite">#</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 1.02s infinite">]</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 1.08s infinite">T</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 1.14s infinite">=</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 1.20s infinite">*</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 1.26s infinite">X</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 1.32s infinite">H</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 1.38s infinite">U</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 1.44s infinite">3</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 1.50s infinite">L</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 1.56s infinite">5</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 1.62s infinite">A</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 1.68s infinite">}</text>
+<text class="n s" x="590.0" y="112" style="animation:f 10.0s 1.74s infinite">}</text>
+<text class="n" x="590.0" y="112" style="opacity:0;animation:L10 10.0s infinite">B</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 0.00s infinite">S</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 0.06s infinite">8</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 0.12s infinite">]</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 0.18s infinite">M</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 0.24s infinite">8</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 0.30s infinite">G</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 0.36s infinite">?</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 0.42s infinite">V</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 0.48s infinite">?</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 0.54s infinite">8</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 0.60s infinite">@</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 0.66s infinite">N</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 0.72s infinite">K</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 0.78s infinite">Z</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 0.84s infinite">]</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 0.90s infinite">L</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 0.96s infinite">#</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 1.02s infinite">=</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 1.08s infinite">9</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 1.14s infinite">A</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 1.20s infinite">@</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 1.26s infinite">W</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 1.32s infinite">7</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 1.38s infinite">B</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 1.44s infinite">H</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 1.50s infinite">Z</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 1.56s infinite">V</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 1.62s infinite">R</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 1.68s infinite">D</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 1.74s infinite">R</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 1.80s infinite">%</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 1.86s infinite">F</text>
+<text class="n s" x="630.0" y="112" style="animation:f 10.0s 1.92s infinite">F</text>
+<text class="n" x="630.0" y="112" style="opacity:0;animation:L11 10.0s infinite">O</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 0.00s infinite">}</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 0.06s infinite">7</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 0.12s infinite">E</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 0.18s infinite">]</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 0.24s infinite">#</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 0.30s infinite">=</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 0.36s infinite">J</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 0.42s infinite">J</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 0.48s infinite">/</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 0.54s infinite">6</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 0.60s infinite">$</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 0.66s infinite">L</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 0.72s infinite">S</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 0.78s infinite">9</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 0.84s infinite">@</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 0.90s infinite">3</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 0.96s infinite">P</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 1.02s infinite">#</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 1.08s infinite">]</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 1.14s infinite">}</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 1.20s infinite">&gt;</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 1.26s infinite">N</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 1.32s infinite">{</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 1.38s infinite">V</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 1.44s infinite">1</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 1.50s infinite">/</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 1.56s infinite">*</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 1.62s infinite">Z</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 1.68s infinite">4</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 1.74s infinite">9</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 1.80s infinite">4</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 1.86s infinite">H</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 1.92s infinite">R</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 1.98s infinite">Q</text>
+<text class="n s" x="670.0" y="112" style="animation:f 10.0s 2.04s infinite">E</text>
+<text class="n" x="670.0" y="112" style="opacity:0;animation:L12 10.0s infinite">N</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 0.00s infinite">X</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 0.06s infinite">B</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 0.12s infinite">&amp;</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 0.18s infinite">$</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 0.24s infinite">Q</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 0.30s infinite">&amp;</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 0.36s infinite">Q</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 0.42s infinite">A</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 0.48s infinite">E</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 0.54s infinite">{</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 0.60s infinite">?</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 0.66s infinite">D</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 0.72s infinite">Q</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 0.78s infinite">E</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 0.84s infinite">C</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 0.90s infinite">X</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 0.96s infinite">E</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 1.02s infinite">8</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 1.08s infinite">R</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 1.14s infinite">T</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 1.20s infinite">/</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 1.26s infinite">7</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 1.32s infinite">P</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 1.38s infinite">#</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 1.44s infinite">J</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 1.50s infinite">}</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 1.56s infinite">%</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 1.62s infinite">%</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 1.68s infinite">6</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 1.74s infinite">R</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 1.80s infinite">+</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 1.86s infinite">6</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 1.92s infinite">2</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 1.98s infinite">N</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 2.04s infinite">G</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 2.10s infinite">G</text>
+<text class="n s" x="710.0" y="112" style="animation:f 10.0s 2.16s infinite">/</text>
+<text class="n" x="710.0" y="112" style="opacity:0;animation:L13 10.0s infinite">I</text>
+  <g class="after">
+    <text class="n g1" x="190.0 230.0 270.0 310.0 350.0 390.0 430.0 470.0 510.0 550.0 590.0 630.0 670.0 710.0" y="112" style="text-anchor:middle">CARLOS ZAMBONI</text>
+    <text class="n g2" x="190.0 230.0 270.0 310.0 350.0 390.0 430.0 470.0 510.0 550.0 590.0 630.0 670.0 710.0" y="112" style="text-anchor:middle">CARLOS ZAMBONI</text>
+    <rect class="cur" x="736.0" y="66" width="20" height="50"/>
+    <text class="sub" x="450.0" y="160"><tspan fill="#ff4d4d">[</tspan> offensive security <tspan fill="#ff4d4d">|</tspan> red team <tspan fill="#ff4d4d">|</tspan> cloud <tspan fill="#ff4d4d">]</tspan></text>
   </g>
-  <rect class="cur" x="742" y="64" width="22" height="52"/>
   <rect class="scan" width="900" height="60"/>
+</g>
+<rect x=".5" y=".5" width="899" height="219" rx="10" fill="none" stroke="#ff0033" stroke-opacity=".35"/>
 </svg>
