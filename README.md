@@ -7,12 +7,11 @@
 <br/>
 
 [![GitHub](https://img.shields.io/badge/GitHub-CarlosZambonii-ff0033?style=flat-square&logo=github&logoColor=white)](https://github.com/CarlosZambonii)
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-naza1mm-ff0033?style=flat-square&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/naza1mm)
 
 </div>
 
 ---
-
-<img align="right" width="380" src="https://github-readme-activity-graph.vercel.app/graph?username=CarlosZambonii&bg_color=0d1117&color=ff0033&line=ff4d4d&point=ff4d4d&area=true&hide_border=true" />
 
 **`$ whoami`**
 
@@ -31,7 +30,6 @@ contributor @ ntari (us non-profit)
 [*] target    → Red Team / Pentest @ remote
 ```
 
-<br clear="right"/>
 
 ---
 
@@ -39,7 +37,7 @@ contributor @ ntari (us non-profit)
 
 | | cert | issuer |
 |-|------|--------|
-| ◆ | **Pre Security (SEC0)** | TryHackMe |
+| ◆ | **Pre Security (SEC0)** | [TryHackMe](https://tryhackme.com/p/naza1mm) |
 
 ---
 
@@ -81,8 +79,8 @@ contributor @ ntari (us non-profit)
 
 **languages**
 
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
 
 **security & CI/CD**
@@ -91,15 +89,6 @@ contributor @ ntari (us non-profit)
 ![Trivy](https://img.shields.io/badge/Trivy-1904DA?style=flat-square&logo=aquasecurity&logoColor=white)
 ![OWASP ZAP](https://img.shields.io/badge/OWASP%20ZAP-000000?style=flat-square&logo=owasp&logoColor=white)
 ![gosec](https://img.shields.io/badge/gosec-00ADD8?style=flat-square&logo=go&logoColor=white)
-
-**app layer**
-
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=black)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 
 ---
 
@@ -111,10 +100,6 @@ contributor @ ntari (us non-profit)
 <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CarlosZambonii&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=ff0033&text_color=e6e6e6&langs_count=8" />
 
 <img src="https://streak-stats.demolab.com?user=CarlosZambonii&theme=dark&hide_border=true&background=0d1117&ring=ff0033&fire=ff4d4d&currStreakLabel=ff0033&sideLabels=ff4d4d&stroke=330000" />
-
-<br/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=CarlosZambonii&theme=radical&no-frame=true&no-bg=true&margin-w=4&column=7" />
 
 </div>
 
