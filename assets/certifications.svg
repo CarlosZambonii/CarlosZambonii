@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="242" viewBox="0 0 900 242">
+  <style>
+    text { font: 14px 'JetBrains Mono','Fira Code',Consolas,'DejaVu Sans Mono','Courier New',monospace; white-space: pre; opacity: 0; }
+    .bl { animation: bl 1s infinite steps(1); }
+    @keyframes bl { 50% { opacity: 0; } }
+    @keyframes k0{0%,3.33%{opacity:0}3.42%,100%{opacity:1}}
+@keyframes k1{0%,4.58%{opacity:0}4.67%,100%{opacity:1}}
+@keyframes w1{0%,4.58%{width:33.6px}16.25%,100%{width:218.4px}}
+@keyframes k2{0%,20.42%{opacity:0}20.50%,100%{opacity:1}}
+@keyframes k3{0%,22.50%{opacity:0}22.58%,100%{opacity:1}}
+@keyframes k4{0%,24.58%{opacity:0}24.67%,100%{opacity:1}}
+@keyframes k5{0%,26.67%{opacity:0}26.75%,100%{opacity:1}}
+@keyframes k6{0%,28.75%{opacity:0}28.83%,100%{opacity:1}}
+@keyframes k7{0%,30.00%{opacity:0}30.08%,100%{opacity:1}}
+  </style>
+  <rect x=".5" y=".5" width="899" height="241" rx="10" fill="#0d1117" stroke="#ff0033" stroke-opacity=".5"/>
+  <path d="M1 11a10 10 0 0 1 10-10h878a10 10 0 0 1 10 10v23H1z" fill="#161b22"/>
+  <circle cx="22" cy="17" r="6" fill="#ff5f56"/><circle cx="42" cy="17" r="6" fill="#ffbd2e"/><circle cx="62" cy="17" r="6" fill="#27c93f"/>
+  <text x="450.0" y="22" text-anchor="middle" style="opacity:1;fill:#8b949e;font-size:13px">carlos@redteam: ~/certs</text>
+  <text x="24" y="62" style="animation:k0 12.0s infinite"><tspan fill="#ff0033">┌──(</tspan><tspan fill="#ff4d4d">carlos@redteam</tspan><tspan fill="#ff0033">)-[</tspan><tspan fill="#e6e6e6">~/certs</tspan><tspan fill="#ff0033">]</tspan></text>
+<clipPath id="c1"><rect x="24" y="68" height="22" style="animation:w1 12.0s steps(22) infinite"/></clipPath>
+<text x="24" y="84" clip-path="url(#c1)" style="animation:k1 12.0s infinite"><tspan fill="#ff0033">└─$ </tspan><tspan fill="#e6e6e6">cat certifications.txt</tspan></text>
+<text x="24" y="106" style="animation:k2 12.0s infinite"></text>
+<text x="24" y="128" style="animation:k3 12.0s infinite"><tspan fill="#ff0033"> ◆ </tspan><tspan fill="#e6e6e6">Pre Security (SEC0)</tspan><tspan fill="#e6e6e6">    </tspan><tspan fill="#ff4d4d">[ completed ✓ ]</tspan></text>
+<text x="24" y="150" style="animation:k4 12.0s infinite"><tspan fill="#6e7681">   └─ </tspan><tspan fill="#8b949e">issuer: TryHackMe · profile: naza1mm</tspan></text>
+<text x="24" y="172" style="animation:k5 12.0s infinite"></text>
+<text x="24" y="194" style="animation:k6 12.0s infinite"><tspan fill="#ff0033">┌──(</tspan><tspan fill="#ff4d4d">carlos@redteam</tspan><tspan fill="#ff0033">)-[</tspan><tspan fill="#e6e6e6">~/certs</tspan><tspan fill="#ff0033">]</tspan></text>
+<text x="24" y="216" style="animation:k7 12.0s infinite"><tspan fill="#ff0033">└─$ </tspan></text>
+  <g class="bl"><rect fill="#ff0033" x="57.6" y="202" width="9" height="18" style="opacity:0;animation:k7 12.0s infinite"/></g>
+</svg>

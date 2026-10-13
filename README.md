@@ -39,9 +39,9 @@ contributor @ ntari (us non-profit)
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2500&pause=2500&color=FF0033&vCenter=true&width=500&height=34&lines=%24+cat+certifications.txt" alt="$ cat certifications.txt" />
 
-| | cert | issuer |
-|-|------|--------|
-| ◆ | **Pre Security (SEC0)** | [TryHackMe](https://tryhackme.com/p/naza1mm) |
+<img src="assets/certifications.svg" width="100%" alt="certifications: Pre Security (SEC0), TryHackMe" />
+
+<sub>→ <a href="https://tryhackme.com/p/naza1mm">TryHackMe profile</a></sub>
 
 ---
 
@@ -55,9 +55,9 @@ contributor @ ntari (us non-profit)
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2500&pause=2500&color=FF0033&vCenter=true&width=500&height=34&lines=%24+git+log+--merged" alt="$ git log --merged" />
 
-| | company | contribution | status |
-|-|---------|--------------|--------|
-| ◆ | **[Buildkite](https://github.com/buildkite/buildkite-agent-scaler)** (Melbourne, AU) | [PR #337](https://github.com/buildkite/buildkite-agent-scaler/pull/337): better error messages for rejected agent tokens | `merged` ✅ |
+<img src="assets/contributions.svg" width="100%" alt="open source: Buildkite PR #337, merged" />
+
+<sub>→ <a href="https://github.com/buildkite/buildkite-agent-scaler/pull/337">Buildkite PR #337</a></sub>
 
 ---
 
