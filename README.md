@@ -6,8 +6,8 @@
 
 <br/>
 
-[![GitHub](https://img.shields.io/badge/GitHub-CarlosZambonii-ff0033?style=flat-square&logo=github&logoColor=white)](https://github.com/CarlosZambonii)
-[![TryHackMe](https://img.shields.io/badge/TryHackMe-naza1mm-ff0033?style=flat-square&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/naza1mm)
+<a href="https://github.com/CarlosZambonii"><img src="assets/btn-github.svg" height="52" alt="GitHub: CarlosZambonii" /></a>
+<a href="https://tryhackme.com/p/naza1mm"><img src="assets/btn-thm.svg" height="52" alt="TryHackMe: naza1mm" /></a>
 
 </div>
 
