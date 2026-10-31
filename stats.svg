@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330">
+  <style>
+    text { font: 14px 'JetBrains Mono','Fira Code',Consolas,'DejaVu Sans Mono','Courier New',monospace; white-space: pre; opacity: 0; }
+    .bl { animation: bl 1s infinite steps(1); }
+    @keyframes bl { 50% { opacity: 0; } }
+    @keyframes k0{0%,2.86%{opacity:0}2.93%,100%{opacity:1}}
+@keyframes k1{0%,3.93%{opacity:0}4.00%,100%{opacity:1}}
+@keyframes w1{0%,3.93%{width:33.6px}13.93%,100%{width:302.40000000000003px}}
+@keyframes k2{0%,17.50%{opacity:0}17.57%,100%{opacity:1}}
+@keyframes k3{0%,19.29%{opacity:0}19.36%,100%{opacity:1}}
+@keyframes k4{0%,21.07%{opacity:0}21.14%,100%{opacity:1}}
+@keyframes k5{0%,22.86%{opacity:0}22.93%,100%{opacity:1}}
+@keyframes k6{0%,24.64%{opacity:0}24.71%,100%{opacity:1}}
+@keyframes k7{0%,26.43%{opacity:0}26.50%,100%{opacity:1}}
+@keyframes k8{0%,28.21%{opacity:0}28.29%,100%{opacity:1}}
+@keyframes k9{0%,30.00%{opacity:0}30.07%,100%{opacity:1}}
+@keyframes k10{0%,31.79%{opacity:0}31.86%,100%{opacity:1}}
+@keyframes k11{0%,32.86%{opacity:0}32.93%,100%{opacity:1}}
+  </style>
+  <rect x=".5" y=".5" width="899" height="329" rx="10" fill="#0d1117" stroke="#ff0033" stroke-opacity=".5"/>
+  <path d="M1 11a10 10 0 0 1 10-10h878a10 10 0 0 1 10 10v23H1z" fill="#161b22"/>
+  <circle cx="22" cy="17" r="6" fill="#ff5f56"/><circle cx="42" cy="17" r="6" fill="#ffbd2e"/><circle cx="62" cy="17" r="6" fill="#27c93f"/>
+  <text x="450.0" y="22" text-anchor="middle" style="opacity:1;fill:#8b949e;font-size:13px">carlos@redteam: ~</text>
+  <text x="24" y="62" style="animation:k0 14.0s infinite"><tspan fill="#ff0033">┌──(</tspan><tspan fill="#ff4d4d">carlos@redteam</tspan><tspan fill="#ff0033">)-[</tspan><tspan fill="#e6e6e6">~</tspan><tspan fill="#ff0033">]</tspan></text>
+<clipPath id="c1"><rect x="24" y="68" height="22" style="animation:w1 14.0s steps(32) infinite"/></clipPath>
+<text x="24" y="84" clip-path="url(#c1)" style="animation:k1 14.0s infinite"><tspan fill="#ff0033">└─$ </tspan><tspan fill="#e6e6e6">./stats.sh --user CarlosZambonii</tspan></text>
+<text x="24" y="106" style="animation:k2 14.0s infinite"></text>
+<text x="24" y="128" style="animation:k3 14.0s infinite"><tspan fill="#ff4d4d">[*] </tspan><tspan fill="#6e7681">contributions (1y)        </tspan><tspan fill="#e6e6e6">683</tspan><tspan fill="#8b949e"></tspan></text>
+<text x="24" y="150" style="animation:k4 14.0s infinite"><tspan fill="#ff4d4d">[*] </tspan><tspan fill="#6e7681">current streak            </tspan><tspan fill="#e6e6e6">1 day</tspan><tspan fill="#8b949e">   longest 10</tspan></text>
+<text x="24" y="172" style="animation:k5 14.0s infinite"><tspan fill="#ff4d4d">[*] </tspan><tspan fill="#6e7681">pull requests             </tspan><tspan fill="#e6e6e6">8</tspan><tspan fill="#8b949e">   merged 2</tspan></text>
+<text x="24" y="194" style="animation:k6 14.0s infinite"><tspan fill="#ff4d4d">[*] </tspan><tspan fill="#6e7681">repositories              </tspan><tspan fill="#e6e6e6">14</tspan><tspan fill="#8b949e">   ★ 3 stars</tspan></text>
+<text x="24" y="216" style="animation:k7 14.0s infinite"></text>
+<text x="24" y="238" style="animation:k8 14.0s infinite"><tspan fill="#ff0033">[+] </tspan><tspan fill="#e6e6e6">scan complete</tspan><tspan fill="#8b949e"> · updated 2026-10-31</tspan></text>
+<text x="24" y="260" style="animation:k9 14.0s infinite"></text>
+<text x="24" y="282" style="animation:k10 14.0s infinite"><tspan fill="#ff0033">┌──(</tspan><tspan fill="#ff4d4d">carlos@redteam</tspan><tspan fill="#ff0033">)-[</tspan><tspan fill="#e6e6e6">~</tspan><tspan fill="#ff0033">]</tspan></text>
+<text x="24" y="304" style="animation:k11 14.0s infinite"><tspan fill="#ff0033">└─$ </tspan></text>
+  <g class="bl"><rect fill="#ff0033" x="57.6" y="290" width="9" height="18" style="opacity:0;animation:k11 14.0s infinite"/></g>
+</svg>
